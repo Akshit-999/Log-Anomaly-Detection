@@ -1,0 +1,197 @@
+[CRITICAL] Disk space low on 89
+[CRITICAL] Disk space low on 500
+[INFO] CPU usage high
+[INFO] CPU usage high
+[INFO] CPU usage high
+[CRITICAL] Disk space low on 83
+[INFO] Service /dev/sdb2 restarted successfully
+[WARN] Memory usage at db-service%
+[WARN] Memory usage at 500%
+[CRITICAL] Disk space low on 500
+[INFO] Service 92 restarted successfully
+[CRITICAL] Disk space low on 73
+[ERROR] Request failed with status 400
+[INFO] Service 500 restarted successfully
+[INFO] CPU usage high
+[WARN] Memory usage at /dev/sda1%
+[WARN] Memory usage at auth-service%
+[INFO] Service payment-service restarted successfully
+[INFO] Service 400 restarted successfully
+[WARN] Memory usage at /dev/sdb2%
+[INFO] Service 70 restarted successfully
+[WARN] Memory usage at /dev/sdb2%
+[INFO] Service db-service restarted successfully
+[WARN] Memory usage at db-service%
+[CRITICAL] Disk space low on 200
+[WARN] Memory usage at 88%
+[WARN] Memory usage at /dev/sda1%
+[INFO] CPU usage high
+[ERROR] Request failed with status /dev/sdb2
+[CRITICAL] Disk space low on auth-service
+[WARN] Memory usage at 400%
+[INFO] Service 500 restarted successfully
+[INFO] Service /dev/sda1 restarted successfully
+[INFO] CPU usage high
+[WARN] Memory usage at /dev/sda1%
+[ERROR] Request failed with status auth-service
+[INFO] Service /dev/sda1 restarted successfully
+[ERROR] Request failed with status auth-service
+[WARN] Memory usage at 84%
+[CRITICAL] Disk space low on /dev/sda1
+[WARN] Memory usage at /dev/sdb2%
+[ERROR] Request failed with status 500
+[WARN] Memory usage at 84%
+[INFO] Service 80 restarted successfully
+[WARN] Memory usage at /dev/sdb2%
+[WARN] Memory usage at 94%
+[CRITICAL] Disk space low on payment-service
+[INFO] CPU usage high
+[ERROR] Request failed with status 400
+[WARN] Memory usage at 75%
+[INFO] CPU usage high
+[INFO] CPU usage high
+[ERROR] Request failed with status db-service
+[CRITICAL] Disk space low on 400
+[WARN] Memory usage at db-service%
+[INFO] Service 97 restarted successfully
+[INFO] Service 91 restarted successfully
+[WARN] Memory usage at 400%
+[INFO] Service payment-service restarted successfully
+[ERROR] Request failed with status payment-service
+[WARN] Memory usage at /dev/sdb2%
+[INFO] CPU usage high
+[WARN] Memory usage at db-service%
+[ERROR] Request failed with status db-service
+[INFO] CPU usage high
+[INFO] CPU usage high
+[INFO] Service db-service restarted successfully
+[CRITICAL] Disk space low on /dev/sdb2
+[WARN] Memory usage at payment-service%
+[WARN] Memory usage at /dev/sdb2%
+[CRITICAL] Disk space low on 400
+[INFO] CPU usage high
+[INFO] CPU usage high
+[ERROR] Request failed with status auth-service
+[ERROR] Request failed with status payment-service
+[INFO] Service /dev/sda1 restarted successfully
+[INFO] CPU usage high
+[ERROR] Request failed with status /dev/sdb2
+[CRITICAL] Disk space low on 400
+[CRITICAL] Disk space low on auth-service
+[ERROR] Request failed with status 95
+[INFO] Service 79 restarted successfully
+[INFO] Service /dev/sdb2 restarted successfully
+[ERROR] Request failed with status auth-service
+[CRITICAL] Disk space low on /dev/sdb2
+[INFO] Service auth-service restarted successfully
+[WARN] Memory usage at 200%
+[INFO] CPU usage high
+[WARN] Memory usage at auth-service%
+[CRITICAL] Disk space low on 77
+[CRITICAL] Disk space low on 500
+[ERROR] Request failed with status 83
+[ERROR] Request failed with status /dev/sdb2
+[INFO] Service /dev/sda1 restarted successfully
+[INFO] Service db-service restarted successfully
+[CRITICAL] Disk space low on 84
+[WARN] Memory usage at db-service%
+[ERROR] Request failed with status /dev/sdb2
+[ERROR] Request failed with status 90
+[WARN] Memory usage at 95%
+[INFO] Service /dev/sda1 restarted successfully
+[CRITICAL] Disk space low on 80
+[ERROR] Request failed with status payment-service
+[INFO] CPU usage high
+[ERROR] Request failed with status 500
+[CRITICAL] Disk space low on /dev/sdb2
+[INFO] Service 400 restarted successfully
+[INFO] CPU usage high
+[CRITICAL] Disk space low on 79
+[WARN] Memory usage at /dev/sda1%
+[WARN] Memory usage at 77%
+[WARN] Memory usage at /dev/sda1%
+[INFO] CPU usage high
+[WARN] Memory usage at 200%
+[ERROR] Request failed with status db-service
+[INFO] Service /dev/sdb2 restarted successfully
+[ERROR] Request failed with status 88
+[WARN] Memory usage at 75%
+[INFO] CPU usage high
+[INFO] CPU usage high
+[INFO] CPU usage high
+[WARN] Memory usage at db-service%
+[WARN] Memory usage at payment-service%
+[CRITICAL] Disk space low on /dev/sdb2
+[CRITICAL] Disk space low on auth-service
+[ERROR] Request failed with status 400
+[WARN] Memory usage at 100%
+[ERROR] Request failed with status /dev/sdb2
+[INFO] Service 95 restarted successfully
+[ERROR] Request failed with status db-service
+[INFO] CPU usage high
+[WARN] Memory usage at 76%
+[CRITICAL] Disk space low on 500
+[INFO] CPU usage high
+[CRITICAL] Disk space low on 95
+[CRITICAL] Disk space low on 400
+[CRITICAL] Disk space low on payment-service
+[INFO] CPU usage high
+[CRITICAL] Disk space low on 76
+[INFO] Service /dev/sda1 restarted successfully
+[WARN] Memory usage at payment-service%
+[INFO] Service 73 restarted successfully
+[WARN] Memory usage at 94%
+[WARN] Memory usage at /dev/sdb2%
+[INFO] Service 77 restarted successfully
+[ERROR] Request failed with status /dev/sda1
+[ERROR] Request failed with status /dev/sdb2
+[CRITICAL] Disk space low on db-service
+[WARN] Memory usage at db-service%
+[ERROR] Request failed with status 73
+[ERROR] Request failed with status auth-service
+[CRITICAL] Disk space low on /dev/sda1
+[CRITICAL] Disk space low on 95
+[INFO] CPU usage high
+[WARN] Memory usage at 500%
+[INFO] CPU usage high
+[WARN] Memory usage at /dev/sdb2%
+[INFO] Service db-service restarted successfully
+[CRITICAL] Disk space low on /dev/sda1
+[WARN] Memory usage at /dev/sda1%
+[INFO] CPU usage high
+[WARN] Memory usage at auth-service%
+[INFO] CPU usage high
+[INFO] CPU usage high
+[INFO] Service db-service restarted successfully
+[WARN] Memory usage at 72%
+[WARN] Memory usage at /dev/sda1%
+[ERROR] Request failed with status /dev/sdb2
+[WARN] Memory usage at /dev/sda1%
+[WARN] Memory usage at 500%
+[INFO] CPU usage high
+[INFO] CPU usage high
+[INFO] Service 400 restarted successfully
+[INFO] CPU usage high
+[ERROR] Request failed with status 200
+[WARN] Memory usage at payment-service%
+[INFO] Service auth-service restarted successfully
+[WARN] Memory usage at /dev/sda1%
+[INFO] Service /dev/sdb2 restarted successfully
+[INFO] Service db-service restarted successfully
+[CRITICAL] Disk space low on 70
+[ERROR] Request failed with status 500
+[CRITICAL] Disk space low on auth-service
+[WARN] Memory usage at payment-service%
+[CRITICAL] Disk space low on /dev/sdb2
+[INFO] CPU usage high
+[INFO] Service db-service restarted successfully
+[CRITICAL] Disk space low on /dev/sda1
+[ERROR] Request failed with status auth-service
+[ERROR] Request failed with status 85
+[CRITICAL] Disk space low on /dev/sda1
+[ERROR] Request failed with status 200
+[INFO] CPU usage high
+[INFO] CPU usage high
+[WARN] Memory usage at 74%
+[INFO] CPU usage high
+[ERROR] Request failed with status 78
