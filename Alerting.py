@@ -59,7 +59,10 @@ class Alerting:
         try:
             host = smtp_server or "localhost"
             port = smtp_port or 25
-            print(f"Connecting to SMTP server at {host}:{port}...")   
+            print(f"📧 Connecting to SMTP server at {host}:{port}...")   
+            # with smtplib.SMTP(host, port) as s:                         #this was for testing  
+            #     s.send_message(msg)
+            # print("Email sent!")
             with smtplib.SMTP("smtp.gmail.com", 587) as s:
                 s.starttls()
                 s.login("akshit.agrawal999@gmail.com", "akshit@999")
@@ -70,7 +73,7 @@ class Alerting:
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":                                              #this is for testing the file, comment this in actual pipeline implementation
     alerter = Alerting()
     
     # # Test Teams
