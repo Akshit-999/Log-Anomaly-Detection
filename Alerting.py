@@ -65,7 +65,7 @@ class Alerting:
             # print("Email sent!")
             with smtplib.SMTP("smtp.gmail.com", 587) as s:
                 s.starttls()
-                s.login("akshit.agrawal999@gmail.com", "akshit@999")
+                s.login("", "")
                 s.send_message(msg)
         except Exception as e:
             print("Email failed:", e)
