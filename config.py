@@ -30,8 +30,8 @@ ALERT_MODE = os.getenv("ALERT_MODE", "webhook").lower()  # "webhook" or "fastapi
 
 # Webhook settings
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK", "")
-TEAMS_WEBHOOK = os.getenv("TEAMS_WEBHOOK", "")
-EMAIL_SMTP = os.getenv("EMAIL_SMTP", "")
+TEAMS_WEBHOOK = os.getenv("TEAMS_WEBHOOK", "https://lnmiit.webhook.office.com/webhookb2/a5b45af8-24d2-4073-8d44-dab358c822a3@d0a26d55-d508-4924-ba9d-8f93f8c166f1/IncomingWebhook/fe4bc1311b424587ae5e8a84db5cc8db/16a51ea4-0c6a-4aeb-a984-d7e9b0d69beb/V2OV0d_TnBfRVoyKZCvjLooj4L4aVtFPNJ9Ppvkj8M6gI1")
+EMAIL_SMTP = os.getenv("EMAIL_SMTP", "noreply@logbert.local")
 
 # FastAPI settings
 FASTAPI_HOST = os.getenv("FASTAPI_HOST", "0.0.0.0")
