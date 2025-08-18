@@ -1,12 +1,34 @@
-
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModel
 import torch
 import torch.nn.functional as F
 from typing import List, Dict, Any
-from config import LOGBERT_MODEL
+
 import numpy as np
 from fetch_logs import tail_file
 import json
+
+from dotenv import load_dotenv
+import os
+import google.generativeai as genai
+from config import LOGBERT_MODEL, DRAIN_DEPTH, DRAIN_SIMILARITY
+
+# Always load .env first
+load_dotenv(override=True)
+
+GEMINI_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_KEY:
+    raise ValueError(".env does not have GEMINI_API_KEY set!")
+
+# Force override
+os.environ["GEMINI_API_KEY"] = GEMINI_KEY
+
+# Configure Gemini
+genai.configure(api_key=GEMINI_KEY)
+gemini_client = genai.GenerativeModel("gemini-1.5-flash")
+print("✅ Using GEMINI API key:", GEMINI_KEY[:8] + "…")
+
+
+
 
 class LogBERTInference:
     def __init__(self, model_name=LOGBERT_MODEL, device=None):
@@ -101,19 +123,31 @@ class LogBERTInference:
         }
 
 
-# if __name__ == "__main__":
-#     from fetch_logs import tail_file
-#     import itertools
+if __name__ == "__main__":
+    import itertools
+    from explainer import explain
 
-#     logbert = LogBERTInference()
+    logbert = LogBERTInference()
+    log_path = "dynamic_logs.txt"
 
-#     log_path = "dynamic_logs.txt"
+    for line in itertools.islice(tail_file(log_path, poll_interval=1), 20):  
+        # wrap single log line as a "sequence"
+        result = logbert.infer([line])
 
-#     for line in itertools.islice(tail_file(log_path, poll_interval=1), 20):  # take only 20 lines for test
-#         result = logbert.infer([line])
-#         print("Anomaly Score:", result["score"])
-#         print("Text Processed:", result["text"])
-#         print("---")
+        print("Anomaly Score:", result["score"])
+        print("Text Processed:", result["text"])
+
+        # only explain if anomaly score is high
+        if result["score"] > 0.1:
+            explanation = explain(
+                sequence=result["text"], 
+                score=result["score"], 
+                tokens=result["tokens"], 
+                token_importance=result["token_importance"]
+            )
+            print("LLM Explanation:", explanation)
+
+        print("---")
 
 
 
