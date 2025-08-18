@@ -41,8 +41,7 @@ FASTAPI_PORT = int(os.getenv("FASTAPI_PORT", "8000"))
 ALERT_COOLDOWN_SECONDS = int(os.getenv("ALERT_COOLDOWN_SECONDS", "60"))
 
 # Explainable AI (optional LLM)
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", None)
-EXPLAINER_MODEL = os.getenv("EXPLAINER_MODEL", "gpt-4o-mini") 
+EXPLAINER_MODEL = "gemini-1.5-flash"
 
 # Storage
 DB_PATH = os.getenv("DB_PATH", "data/labels.sqlite")
