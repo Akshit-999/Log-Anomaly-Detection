@@ -44,7 +44,7 @@ ALERT_COOLDOWN_SECONDS = int(os.getenv("ALERT_COOLDOWN_SECONDS", "60"))
 EXPLAINER_MODEL = "gemini-1.5-flash"
 
 # Storage
-DB_PATH = os.getenv("DB_PATH", "data/labels.sqlite")
+DB_PATH = os.getenv("DB_PATH", "/Users/akshitagrawal/Desktop/datasets/logbert/feedback.db")  # SQLite DB path
 
 # Misc
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
