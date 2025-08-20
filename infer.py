@@ -14,21 +14,32 @@ from config import LOGBERT_MODEL, DRAIN_DEPTH, DRAIN_SIMILARITY
 
 
 
+
 class LogBERTInference:
     def __init__(self, model_name=LOGBERT_MODEL, device=None):
+        # pick device
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-        # Try to load a classification head; if unavailable fall back to AutoModel
+
         try:
+            # Try classification head
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            self.model = AutoModelForSequenceClassification.from_pretrained(model_name, output_attentions=True)
+            self.model = AutoModelForSequenceClassification.from_pretrained(
+                model_name,
+                output_attentions=True,
+                device_map="auto"  # <-- handles meta tensors safely
+            )
             self.has_classifier = True
         except Exception:
-            # fallback
+            # Fallback to base model
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            self.model = AutoModel.from_pretrained(model_name, output_attentions=True)
+            self.model = AutoModel.from_pretrained(
+                model_name,
+                output_attentions=True,
+                device_map="auto"
+            )
             self.has_classifier = False
-        self.model.to(self.device)
-        self.model.eval()
+
+        print(f"✅ Model loaded on {self.device}, classifier head: {self.has_classifier}")
 
     def sequence_to_text(self, sequence: List) -> str:
         """
