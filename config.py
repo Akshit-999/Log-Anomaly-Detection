@@ -19,7 +19,7 @@ SLIDING_STEP = int(os.getenv("SLIDING_STEP", "5"))            # Only for count-b
 TIME_WINDOW_x = int(os.getenv("TIME_WINDOW_SECONDS", "60"))  # Only for time-based
 
 # Anomaly detection
-ANOMALY_THRESHOLD = float(os.getenv("ANOMALY_THRESHOLD", "0.85"))  
+ANOMALY_THRESHOLD = float(os.getenv("ANOMALY_THRESHOLD", "0.94"))  
 
 # Drain3 Log Parser
 DRAIN_DEPTH = int(os.getenv("DRAIN_DEPTH", "4"))
@@ -44,7 +44,7 @@ ALERT_COOLDOWN_SECONDS = int(os.getenv("ALERT_COOLDOWN_SECONDS", "60"))
 EXPLAINER_MODEL = "gemini-1.5-flash"
 
 # Storage
-DB_PATH = os.getenv("DB_PATH", "/Users/akshitagrawal/Desktop/datasets/logbert/feedback.db")  # SQLite DB path
+DB_PATH = os.getenv("DB_PATH", "/teamspace/studios/this_studio/feedback.db")  # SQLite DB path
 
 # Misc
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
