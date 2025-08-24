@@ -1,4 +1,4 @@
-# app/alerting.py
+
 import time
 import requests
 import smtplib

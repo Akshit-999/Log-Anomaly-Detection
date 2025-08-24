@@ -1,8 +1,4 @@
-"""
-config.py
-Centralized configuration for LogBERT anomaly detection pipeline.
-Values are loaded from environment variables with sensible defaults.
-"""
+
 
 import os
 from transformers import AutoTokenizer, AutoModel

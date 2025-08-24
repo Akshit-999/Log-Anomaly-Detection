@@ -1,4 +1,4 @@
-# fake_log_writer.py
+
 import time
 import random
 
